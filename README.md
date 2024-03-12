@@ -1,3 +1,3 @@
 # CASA0018-ERTONG-GAO
 
-**Edible mushroom detector？**
+**Edible mushroom detector**
