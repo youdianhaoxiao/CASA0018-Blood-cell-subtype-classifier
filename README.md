@@ -1,6 +1,6 @@
 # CASA0018-ERTONG-GAO
 
-**Edible mushroom detector**
+**Blood cell subtype classifier**
 
 
 ## Introduction
