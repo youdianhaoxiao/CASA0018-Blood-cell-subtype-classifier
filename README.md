@@ -139,13 +139,21 @@ Among the different model layers, observations are:
 
 ## Bibliography
 （1）Alam, M.M. (2019) Wiley Online Library | Scientific Research Articles, journals, books, and reference works, Machine learning approach of automatic identification and counting of blood cells. Available at: https://onlinelibrary.wiley.com/ (Accessed: 23 April 2024). 
-（2）Author links open overlay panelSeyed Hamid Rezatofighi a 1 et al. (2011) Automatic recognition of five types of white blood cells in peripheral blood, Computerized Medical Imaging and Graphics. Available at: https://www.sciencedirect.com/science/article/pii/S0895611111000048 (Accessed: 24 April 2024). 
+
+（2）Author links open overlay panelSeyed Hamid Rezatofighi a 1 et al. (2011) Automatic recognition of five types of white blood cells in peripheral blood, Computerized Medical Imaging and Graphics. Available at: https://www.sciencedirect.com/science/article/pii/S0895611111000048 (Accessed: 24 April 2024).
+
 （3）Chadha, G.K. et al. (2014) Automatic segmentation, counting, size determination and classification of white blood cells, An Automated Method for Counting Red Blood Cells using Image Processing. Available at: https://www.sciencedirect.com/science/article/abs/pii/S0263224114001663 (Accessed: 24 April 2024). 
+
 （4）Chadha, G.K. et al. (2020) An automated method for counting red blood cells using image processing, Procedia Computer Science. Available at: https://www.sciencedirect.com/science/article/pii/S1877050920308747 (Accessed: 22 April 2024). 
+
 （5）Habibzadeh, M., Krzyzak, A. and Fevens, T. (1970) White blood cell differential counts using convolutional neural networks for low resolution images, SpringerLink. Available at: https://link.springer.com/chapter/10.1007/978-3-642-38610-7_25 (Accessed: 22 April 2024). 
+
 （6）Lee, S.-J., Chen, P.-Y. and Lin, J.-W. (2022) Complete Blood Cell Detection and counting based on Deep Neural Networks, MDPI. Available at: https://www.mdpi.com/2076-3417/12/16/8140 (Accessed: 22 April 2024). 
+
 （7）Madhloom, H.T. et al. (2010) An automated white blood cell nucleus localization and segmentation using image arithmetic and automatic threshold, NASA/ADS. Available at: https://ui.adsabs.harvard.edu/abs/2010JApSc..10..959M/abstract (Accessed: 24 April 2024). 
+
 （8）Moris, M. (2021) MOBILENETV2 - light weight model (image classification), Medium. Available at: https://medium.com/image-processing-and-ml-note/mobilenetv2-light-weight-model-image-classification-783d79cc01c9 (Accessed: 23 April 2024). 
+
 （9）Wang, Wei et al. (2019) Development of convolutional neural network and its application in image classification: A survey, SPIE Digital Library. Available at: https://www.spiedigitallibrary.org/journals/optical-engineering/volume-58/issue-4/040901/Development-of-convolutional-neural-network-and-its-application-in-image/10.1117/1.OE.58.4.040901.full (Accessed: 24 April 2024). 
 
 
