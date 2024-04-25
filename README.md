@@ -3,18 +3,21 @@
 **Blood cell subtype classifier**
 
 Ertong Gao
+
 Edge Impulse link: https://studio.edgeimpulse.com/studio/382900
+
 Youtube link: https://youtu.be/tql8enxZAJ8
 
 
 ## Introduction
-Project overview
+### Project overview
 This project is build based on Edge impulse, it enables users to detect the white blood cells of 4 types(neutrophil, eosinophil, lymphocyte, monocyte) from blood smear images by using deep learning network architecture. This project is deployed onto phone to use input image by the phone’s camera.
 
-Inspiration
+### Inspiration
 Complete blood cell (CBC) counting has played a vital role in general medical examination. The diagnosis of blood-based diseases often involves identifying and characterizing patient blood samples( Chadha et al., 2020). 
 Common approaches, such as traditional manual counting and automated analyzers, were heavily influenced by the operation of medical professionals, which is time consuming and easily making errors as different blood cells look similar as states below.
 
+<img src="https://github.com/BIT-MJY/Active-SLAM-Based-on-Information-Theory/blob/master/img/1-2.png" width="180" height="105"><img src="https://github.com/BIT-MJY/Active-SLAM-Based-on-Information-Theory/blob/master/img/1-3.png" width="180" height="105"><img src="https://github.com/BIT-MJY/Active-SLAM-Based-on-Information-Theory/blob/master/img/1-4.png" width="180" height="105"/>
 
 ### NEUTROPHIL EOSINOPHIL LYMPHOCYTE MONOCYTE
 
