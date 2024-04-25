@@ -17,9 +17,9 @@ This project is build based on Edge impulse, it enables users to detect the whit
 Complete blood cell (CBC) counting has played a vital role in general medical examination. The diagnosis of blood-based diseases often involves identifying and characterizing patient blood samples( Chadha et al., 2020). 
 Common approaches, such as traditional manual counting and automated analyzers, were heavily influenced by the operation of medical professionals, which is time consuming and easily making errors as different blood cells look similar as states below.
 
-<img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/1.png" width="180" height="105"><img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/eos.png" width="180" height="105"><img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/lym.png" width="180" height="105"/><img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/mon.png" width="180" height="105"/>
+<img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/1.png" width="180" height="105">&emsp;<img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/eos.png" width="180" height="105">&emsp;<img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/lym.png" width="180" height="105"/>&emsp;<img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/mon.png" width="180" height="105"/>
 
-NEUTROPHIL     EOSINOPHIL     LYMPHOCYTE     MONOCYTE
+&emsp;&emsp;NEUTROPHIL&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     EOSINOPHIL&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     LYMPHOCYTE&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     MONOCYTE
 
 
 Automated methods to detect and classify blood cell types have important medical applications. Deep learning project increases the accuracy and speed of diagnosis(Wang et al., 2019), reducing human error and improving patient outcomes, making more informed decisions faster, thus enhancing the efficiency of clinical workflows(Alam, 2019). By reduce the need for extensive manual examination, thereby lowering the costs and save time associated with diagnostic procedures.
@@ -50,7 +50,7 @@ This project is a deep learning project built using a Tensorflow platform, as ot
 Due to the specificity of this project, it is challenging to obtain white blood cell blood sample images and accurately classify and label them. Therefore, the dataset was downloaded from Kaggle. The dataset is a small-scale dataset for blood cells detection, contains 12,436 augmented images of blood cells (JPEG) in total. The classes contains almost equally amount of images, this reduce class bias which can result in poor performance on less-represented classes and helps the model learn more evenly across all classes, thus performing better, reduce bias during the training process, making the model more robust.
 There are approximately 3,000 images for each of 4 different cell types grouped into 4 different folders according to cell type, the cell types are Eosinophil, Lymphocyte, Monocyte, and Neutrophil. When uploading on Edge Impulse, all samples are labelled by their containing blood cell type name, and dataset in split into training set and testing set, Allocating the majority (80%) of data to the training set ensures that the model has ample data to learn the characteristics and patterns of the data. Testing set (20%) provides enough data to verify the model's performance on unseen data, helping to assess the model's generalization capabilities.
 <div align=center>
-<img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/f2.png"/>
+<img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/f2.png"width="400" height="300"/>
 
   Figure 2. Dataset overview
 </div>
@@ -68,18 +68,22 @@ For Dataset preprocessing, dataset passed to create impulse, an impulse takes ra
 
 After serveral experiments which stated in the next section, image size of 160x160, resize mode squash and RGB color depth works best on model performance.
 <div align=center>
-<img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/f4.png"/><img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/f5.png"/>
+<img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/f4.png"/>&emsp;&emsp;<img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/f5.png"/>
 
-  Figure 4.raw data sample        Figure 5.DSP result
+  &emsp;Figure 4.raw data sample&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        Figure 5.DSP result
 </div>
 
 
 ## Model
 After data collection and preprocessing, 76800 features have generated and then pass to a learning block as input layer. Learning block can be considered as the most important part of the project, various different parameters can be tuned for better model performance. First, the learning block can choose from five different types, as the description on platform suggests, Transfer Learning(images) is fine tune a pre-trained image classification model whereas the second and third types are for movement, audio data and numerical values. Experiments also have done to suggest Transfer Learning(images) performs better on model accuracy(Moris, 2021).
 <div align=center>
-<img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/f6.png"/><img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/f7.png"/>
+<img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/f6.png"/>
 
-  Figure 6.Comparison between classifier and transfer learning(image)       Figure 7. Learning block description
+  Figure 6.Comparison between classifier and transfer learning(image)
+  
+  <img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/f7.png"/>
+  
+  Figure 7. Learning block description
 </div>
 
 
@@ -150,12 +154,14 @@ Below shows the result of optimal architecture for this deep learning project af
 <img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/f15.png"/>
 
   Figure 15.Transfer Learning
+  
+  <img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/f16.png"/>
+  
+  Figure 16.Retrained model
 </div>
 
 <div align=center>
-<img src="https://github.com/youdianhaoxiao/CASA0018-Blood-cell-subtype-classifier/blob/main/img/f16.png"/>
 
-  Figure 16.Retrained model
 </div>
 
 
@@ -211,7 +217,9 @@ Among the different model layers, observations are:
 
 ## Future Development
 1.Improve dataset by use object detection technology
+
 2.Improve model by test more types of layer and be able to count cells
+
 3.Develop on Arduino devices and be able to store output result
 
 
